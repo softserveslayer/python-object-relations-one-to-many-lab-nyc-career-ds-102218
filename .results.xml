@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="1" failures="0" name="pytest" skips="0" tests="1" time="0.110"><testcase classname="" file="test/index_test.py" name="test.index_test" time="0"><error message="collection failure">test/index_test.py:9: in &lt;module&gt;
+    class TestOneToManyRelationships(unittest.TestCase):
+test/index_test.py:14: in TestOneToManyRelationships
+    trip_1 = Trip(&quot;11 Broadway, NY, NY&quot;, &quot;123 Smith Street, BK, NY&quot;, driver_1)
+E   TypeError: __init__() takes 3 positional arguments but 4 were given</error></testcase></testsuite>
