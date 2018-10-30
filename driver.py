@@ -1,12 +1,21 @@
 # remeber to import the trip class here
-
+from trip import Trip
 
 class Driver:
     def __init__(self, name):
-        self.name = name
+        self._name = name
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        self._name = name
+
 
     def my_trips(self):
-        pass
+        return [trip for trip in Trip._all if trip.driver == self]
 
     def my_trip_summaries(self):
-        pass
+        return[f"{trip.start} to {trip.destination}" for trip in Trip._all if trip.driver == self]
